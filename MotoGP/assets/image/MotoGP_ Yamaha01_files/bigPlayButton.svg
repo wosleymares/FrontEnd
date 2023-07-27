@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="240px" viewBox="0 0 240 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>29FD47AA-E592-43AB-97DF-AE3FBF15E098</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Standard-screens-in-playback-mode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Symbols-for-standard-screens-in-playback-mode" transform="translate(-698.000000, -60.000000)">
+            <rect fill="none" opacity="0.5" x="0" y="0" width="1200" height="675"></rect>
+            <g id="play-onvideo" transform="translate(698.000000, 60.000000)">
+                <circle id="Oval" fill-opacity="0.75" fill="#000000" fill-rule="evenodd" cx="120" cy="120" r="114"></circle>
+                <path d="M120,240 C53.72583,240 0,186.27417 0,120 C0,53.72583 53.72583,0 120,0 C186.27417,0 240,53.72583 240,120 C240,186.27417 186.27417,240 120,240 Z M120,228 C179.646753,228 228,179.646753 228,120 C228,60.353247 179.646753,12 120,12 C60.353247,12 12,60.353247 12,120 C12,179.646753 60.353247,228 120,228 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="evenodd"></path>
+                <path d="M164.220269,117.57178 C166.613962,118.768627 166.613962,121.162321 164.220269,122.359168 L99.9894894,159.461419 C97.5957958,160.658266 96,159.860368 96,157.067725 L96,82.8632224 C96,80.4695288 97.9947447,79.272682 99.9894894,80.4695288 L164.220269,117.57178 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://privacy-sandbox.uol.com.br/privacy-sandbox.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Sandbox v1-2</title>
+
+
+<meta http-equiv="origin-trial" content="A2Igq7zKjhRsbDUQpw6nTc6ySwbSEY193G8RNmkYlkrEjsANq83uO3DWICVIuEEZm3CbGdS8fFvU/CW+pG/v4w4AAACAeyJvcmlnaW4iOiJodHRwczovL3VvbC5jb20uYnI6NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY4MDY1Mjc5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="></head>
+<body>
+    <script>   
+    function addTrialToken(tokenContents) {
+      const tokenElement = document.createElement('meta');
+      tokenElement.httpEquiv = 'origin-trial';
+      tokenElement.content = tokenContents;
+      document.head.appendChild(tokenElement);
+    }  
+
+    addTrialToken('A2Igq7zKjhRsbDUQpw6nTc6ySwbSEY193G8RNmkYlkrEjsANq83uO3DWICVIuEEZm3CbGdS8fFvU/CW+pG/v4w4AAACAeyJvcmlnaW4iOiJodHRwczovL3VvbC5jb20uYnI6NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY4MDY1Mjc5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=')
+      let url = window.location.ancestorOrigins[0] || '';
+      async function getTopics() {
+          try {
+            if ('browsingTopics' in document &&
+                document.featurePolicy.allowsFeature('browsing-topics')) {
+              const topics = await document.browsingTopics();
+              let returnedTopics = [];
+
+              returnedTopics = topics;
+
+              fetch('https://udr.uol.com.br/store?scope=privsb&parse=base64&data=' + encodeURIComponent(btoa(JSON.stringify( {
+                'topics': returnedTopics,
+                'referer': url
+              }))), { credentials: 'include' });
+            } else {
+                console.log("Topics não é suportado por este browser");
+            }
+            
+          } catch(error) {
+            console.log('Error:', error);
+          } 
+        }
+        
+        getTopics()
+            </script>
+
+</body></html>
